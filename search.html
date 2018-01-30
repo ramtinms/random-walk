@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>  Search | Random Walk
+</title>
+  <link rel="canonical" href="./categories.html">
+
+  <link rel="stylesheet" href="./theme/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./theme/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./theme/css/pygments/default.min.css">
+  <link rel="stylesheet" href="./theme/css/theme.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="tipuesearch/css/normalize.css">
+  <script type="text/javascript" src="tipuesearch/tipuesearch_set.js"></script>
+  <script type="text/javascript" src="tipuesearch/tipuesearch_content.js"></script>
+  <link rel="stylesheet" type="text/css" href="tipuesearch/css/tipuesearch.css">
+  <script type="text/javascript" src="tipuesearch/tipuesearch.min.js"></script>
+
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+<div class="row">
+  <div class="col-sm-12">
+    <h1 class="title"><a href="./">Random Walk</a></h1>
+      <ul class="list-inline">
+          <li class="list-inline-item"><a href="https://ramtinms.github.io" target="_blank">about</a></li>
+      </ul>
+  </div>
+</div>    </div>
+  </header>
+
+  <div class="main">
+    <div class="container">
+      <h1>  Search
+    </h1>
+      <form action="search.html">
+      <div class="tipue_search_left"><img src="tipuesearch/search.png" class="tipue_search_icon"></div>
+      <div class="tipue_search_right"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required></div>
+      <div style="clear: both;"></div>
+      </form>
+      <hr>
+    <div id="tipue_search_content"></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+<div class="row">
+  <ul class="col-sm-6 list-inline">
+      <li class="list-inline-item"><a href="./authors.html">Authors</a></li>
+    <li class="list-inline-item"><a href="./archives.html">Archives</a></li>
+    <li class="list-inline-item"><a href="./categories.html">Categories</a></li>
+  </ul>
+  <p class="col-sm-6 text-sm-right text-muted">
+    Search powered by <a href="http://www.tipue.com/" target="_blank">Tipue</a>
+  </p>
+</div>    </div>
+  </footer>
+  <script>
+  $(document).ready(function() {
+       $('#tipue_search_input').tipuesearch({
+            'mode': 'json',
+            'contentLocation': 'search/index.json'
+       });
+  });
+  </script>
+</body>
+</html>
