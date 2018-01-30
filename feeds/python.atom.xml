@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Random Walk</title><link href="https://ramtinms.github.io/random-walk/" rel="alternate"></link><link href="https://ramtinms.github.io/random-walk/feeds/all.atom.xml" rel="self"></link><id>https://ramtinms.github.io/random-walk/</id><updated>2018-01-30T10:08:00-08:00</updated><entry><title>Linear Algebra using Torch</title><link href="https://ramtinms.github.io/random-walk/pytorch_linear_algebra.html" rel="alternate"></link><published>2018-01-30T10:08:00-08:00</published><updated>2018-01-30T10:08:00-08:00</updated><author><name>Ramtin Seraj</name></author><id>tag:ramtinms.github.io,2018-01-30:/random-walk/pytorch_linear_algebra.html</id><summary type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Random Walk - python</title><link href="https://ramtinms.github.io/random-walk/" rel="alternate"></link><link href="https://ramtinms.github.io/random-walk/feeds/python.atom.xml" rel="self"></link><id>https://ramtinms.github.io/random-walk/</id><updated>2018-01-30T10:08:00-08:00</updated><entry><title>Linear Algebra using Torch</title><link href="https://ramtinms.github.io/random-walk/pytorch_linear_algebra.html" rel="alternate"></link><published>2018-01-30T10:08:00-08:00</published><updated>2018-01-30T10:08:00-08:00</updated><author><name>Ramtin Seraj</name></author><id>tag:ramtinms.github.io,2018-01-30:/random-walk/pytorch_linear_algebra.html</id><summary type="html">
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
@@ -2013,4 +2013,4 @@ eigenvalue =
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
 &lt;/script&gt;
-</content></entry><entry><title>Hello world!</title><link href="https://ramtinms.github.io/random-walk/first-post.html" rel="alternate"></link><published>2018-01-29T10:20:00-08:00</published><updated>2018-01-29T10:20:00-08:00</updated><author><name>Ramtin Seraj</name></author><id>tag:ramtinms.github.io,2018-01-29:/random-walk/first-post.html</id><summary type="html">&lt;p&gt;There is nothing here.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Told you, nothing is waiting here for you.&lt;/p&gt;</content></entry></feed>
+</content></entry></feed>
