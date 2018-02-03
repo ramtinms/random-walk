@@ -6,9 +6,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>  Public Key Encryption Math Problems | Random Walk
+  <title>  Python Regular Expression snippets | Random Walk
 </title>
-  <link rel="canonical" href="https://ramtinms.github.io/random-walk/public_key_encryption_math_problems.html">
+  <link rel="canonical" href="https://ramtinms.github.io/random-walk/python3_regular_expressions.html">
 
 
   <link rel="stylesheet" href="https://ramtinms.github.io/random-walk/theme/css/bootstrap.min.css">
@@ -20,7 +20,7 @@
         href="https://ramtinms.github.io/random-walk/feeds/all.atom.xml">
   <link rel="alternate" type="application/atom+xml" title="Categories Atom Feed"
         href="https://ramtinms.github.io/random-walk/feeds/python.atom.xml">  
-  <meta name="description" content="Public Key Encryption Math Problems¶In order to have better understanding of public encryption methods, I spend some time understanding math problems behind them. Most of these problems provides a Trapdoor functionality. Trapdoor¶Trapdoor is a function that is easy to do it in one way and really hard to do it the otherway. in other words having A">
+  <meta name="description" content="Python Regular Expression snippets¶Small snippet on how to use regular expression in python">
   <script>
     (function(i, s, o, g, r, a, m) {
       i['GoogleAnalyticsObject'] = r;
@@ -52,15 +52,15 @@
 
   <div class="main">
     <div class="container">
-      <h1>  Public Key Encryption Math Problems
+      <h1>  Python Regular Expression snippets
 </h1>
       <hr>
   <article class="article">
     <header>
       <ul class="list-inline">
-        <li class="list-inline-item text-muted" title="2018-01-31T11:16:00-08:00">
+        <li class="list-inline-item text-muted" title="2018-02-03T11:20:00-08:00">
           <i class="fa fa-clock-o"></i>
-          Wed 31 January 2018
+          Sat 03 February 2018
         </li>
         <li class="list-inline-item">
           <i class="fa fa-folder-open-o"></i>
@@ -1046,78 +1046,17 @@ h6:hover .anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Public-Key-Encryption-Math-Problems">Public Key Encryption Math Problems<a class="anchor-link" href="#Public-Key-Encryption-Math-Problems">¶</a></h1><p>In order to have better understanding of public encryption methods, I spend some time understanding math problems behind them. Most of these problems provides a <em>Trapdoor</em> functionality.</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Trapdoor">Trapdoor<a class="anchor-link" href="#Trapdoor">¶</a></h2><p>Trapdoor is a function that is easy to do it in one way and really hard to do it the otherway. in other words having <code>A</code> we can easily compute <code>B</code>. But by having <code>B</code> is really hard to get back to <code>A</code>. This hardness can be due to the <em>cost</em> or <em>time</em> needed.</p>
-<pre><code>A --> B
-A <x- b&lt; code></pre>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="the-integer-factorization-problem">the integer factorization problem<a class="anchor-link" href="#the-integer-factorization-problem">¶</a></h2><p>If we have two number $A$ and $B$ and $ C = A * B $, break C back to A and B is called integer factorization. Prime factorization is a subset of the problem with an extra constraint that factors should be prime. 
-e.g.
-$$ 864  =  2 * 2 * 2 * 2 * 2 * 3 * 3 * 3 $$</p>
-<p>This become interesting and hard problem if :</p>
-<ul>
-<li>$A$ and $B$ are prime numbers</li>
-<li>$A$ and $B$ are very large (about two thousand bits long) </li>
-<li>$A$ and $B$ are randomly chosen</li>
-</ul>
-<p>then $C$ is called semiprime.</p>
-<p>Some of the methods built on top of this problem are :</p>
-<ul>
-<li><em>RSA</em> (Rivest–Shamir–Adleman)</li>
-<li>Paillier</li>
-<li>Benaloh</li>
-<li>Blum–Goldwasser</li>
-<li>Cayley–Purser</li>
-<li>Damgård–Jurik</li>
-<li>GMR</li>
-<li>Goldwasser–Micali</li>
-<li>Rabin</li>
-<li>Okamoto–Uchiyama</li>
-<li>Schmidt–Samoa</li>
-</ul>
-<h4 id="Hardness:">Hardness:<a class="anchor-link" href="#Hardness:">¶</a></h4><p>for 1024-bit RSA, it is estimated by having 100 Machines, it will take more than 2000 years to break it.</p>
-<p><strong>co-prime</strong>: two integers a and b are said to be relatively prime or co-prime if the only positive integer that divides both of them is 1 ( $gcd(a,b) = 1$ )</p>
-<p><strong>Euclidean algorithm</strong> is an efficient method for computing the gcd of two numbers</p>
-<p><strong>Bézout's identity</strong>: let a and b be nonzero integers and let d be their gcd. Then there exist integers x and y such that</p>
-$$ax+by=gcd(a,b)$$<h4 id="RSA-simple-implementation">RSA simple implementation<a class="anchor-link" href="#RSA-simple-implementation">¶</a></h4><p>This code is just for learning, please do not use it for any production code.
-addopted from <a href="https://gist.github.com/tylerl/1239116">here</a></p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Python-Regular-Expression-snippets">Python Regular Expression snippets<a class="anchor-link" href="#Python-Regular-Expression-snippets">¶</a></h1><p>Small snippet on how to use regular expression in python</p>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [7]:</div>
+<div class="prompt input_prompt">In [111]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># pick prime numbers (P, Q) and E such that:</span>
-<span class="c1">#  1: P and Q are prime; picked at random.</span>
-<span class="c1">#  2: 1 < E < (P-1)*(Q-1) and E is co-prime with (P-1)*(Q-1)</span>
-<span class="n">P</span><span class="o">=</span><span class="mi">97</span>  <span class="c1"># First prime</span>
-<span class="n">Q</span><span class="o">=</span><span class="mi">83</span>  <span class="c1"># Second prime</span>
-<span class="n">E</span><span class="o">=</span><span class="mi">53</span>  <span class="c1"># usually a constant; 0x10001 is common, prime is best</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Load regex package</span>
+<span class="kn">import</span> <span class="nn">re</span>
 </pre></div>
 </div>
 </div>
@@ -1128,47 +1067,19 @@ addopted from <a href="https://gist.github.com/tylerl/1239116">here</a></p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Brute-force-primality-test">Brute-force primality test<a class="anchor-link" href="#Brute-force-primality-test">¶</a></h4>
+<h2 id="building-a-RegexObject">building a RegexObject<a class="anchor-link" href="#building-a-RegexObject">¶</a></h2><p>Compiling a pattern into RegexObjects can save running time especially inside class.</p>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [14]:</div>
+<div class="prompt input_prompt">In [112]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">isPrime</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">x</span><span class="o">%</span><span class="k">2</span>==0 and x>2: return False     # False for all even numbers
-    <span class="n">i</span><span class="o">=</span><span class="mi">3</span>                                 <span class="c1"># we don't divide by 1 or 2</span>
-    <span class="n">sqrt</span><span class="o">=</span><span class="n">x</span><span class="o">**.</span><span class="mi">5</span>                          
-    <span class="k">while</span> <span class="n">i</span><span class="o"><</span><span class="n">sqrt</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">x</span><span class="o">%</span><span class="k">i</span>==0: return False
-        <span class="n">i</span><span class="o">+=</span><span class="mi">2</span>
-    <span class="k">return</span> <span class="kc">True</span>
-
-<span class="c1"># tests</span>
-<span class="c1"># print(isPrime(P))</span>
-<span class="c1"># print(isPrime(Q))</span>
-<span class="c1"># print(isPrime(E))</span>
-<span class="c1"># print(isPrime(1))</span>
-<span class="c1"># print(isPrime(4))</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In [ ]:</div>
-<div class="inner_cell">
-<div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="sd">'''</span>
-<span class="sd">Euclidean algorithm to detect the greatest common divisor of a and b</span>
-<span class="sd">'''</span>
-<span class="k">def</span> <span class="nf">gcd</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
-    <span class="k">while</span> <span class="n">b</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span> <span class="o">%</span> <span class="n">b</span>
-    <span class="k">return</span> <span class="n">a</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">'123'</span>
+<span class="n">reg1</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">pattern</span><span class="p">)</span>
+<span class="n">pattern</span> <span class="o">=</span> <span class="s1">'abc'</span>
+<span class="n">reg2</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">flags</span><span class="o">=</span><span class="n">re</span><span class="o">.</span><span class="n">I</span><span class="o">|</span><span class="n">re</span><span class="o">.</span><span class="n">X</span><span class="p">)</span>              
 </pre></div>
 </div>
 </div>
@@ -1179,22 +1090,79 @@ addopted from <a href="https://gist.github.com/tylerl/1239116">here</a></p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="RSA-settings">RSA settings<a class="anchor-link" href="#RSA-settings">¶</a></h4>
+<h3 id="Flags">Flags<a class="anchor-link" href="#Flags">¶</a></h3><table>
+<thead><tr>
+<th>flag</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> re.I</td>
+<td>(ignore case),</td>
+</tr>
+<tr>
+<td> re.M</td>
+<td>(multi-line),</td>
+</tr>
+<tr>
+<td> re.S</td>
+<td>(dot matches all including \n),</td>
+</tr>
+<tr>
+<td> re.L</td>
+<td>(locale dependent) (defining the meaning of white spaces \w, \W, \b, \B, \d, \D, \s, \S )</td>
+</tr>
+<tr>
+<td> re.A</td>
+<td>(ASCII-only matching)</td>
+</tr>
+<tr>
+<td> re.U</td>
+<td>(Unicode matching)</td>
+</tr>
+<tr>
+<td> re.X</td>
+<td>(verbose)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Search-vs.-Match">Search vs. Match<a class="anchor-link" href="#Search-vs.-Match">¶</a></h2><p><strong>match</strong>: find something at the beginning of the string and return a match object.</p>
+<p><strong>search</strong>: find something anywhere in the string and return a match object.</p>
+<p>So if you need to match at the beginning of the string, or to match the entire string use match. It is faster. Otherwise use search.</p>
+<p>Note <strong>search</strong> will only replace one result, if you need all of them use <strong>finditer</strong> and iterate over them.</p>
+<p>If you don't care about the matchObject (e.g. spans) and wants the string only you can use <strong>findall</strong> .</p>
+<p><strong>fullmatch</strong> is also available but cares both about start and end.</p>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [16]:</div>
+<div class="prompt input_prompt">In [113]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Product of P and Q is our modulus; the part determines as the "key size".</span>
-<span class="n">MOD</span><span class="o">=</span><span class="n">P</span><span class="o">*</span><span class="n">Q</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">test</span> <span class="o">=</span> <span class="s1">'123abc123abc123abc'</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'reg1 match'</span><span class="p">,</span> <span class="n">reg1</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">test</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'reg1 search'</span><span class="p">,</span><span class="n">reg1</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">test</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'reg2 match'</span><span class="p">,</span> <span class="n">reg2</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">test</span><span class="p">))</span> <span class="c1"># no match</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'reg2 search'</span><span class="p">,</span><span class="n">reg2</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">test</span><span class="p">))</span>
 
-<span class="c1"># E is the public exponent </span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'-'</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>
 
+<span class="k">for</span> <span class="n">match</span> <span class="ow">in</span> <span class="n">reg1</span><span class="o">.</span><span class="n">finditer</span><span class="p">(</span><span class="n">test</span><span class="p">):</span> <span class="c1"># Returns all matches</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">match</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">MOD</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'-'</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">reg1</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">test</span><span class="p">))</span> <span class="c1">#  list of strings</span>
 </pre></div>
 </div>
 </div>
@@ -1204,7 +1172,16 @@ addopted from <a href="https://gist.github.com/tylerl/1239116">here</a></p>
 <div class="output_area">
 <div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>8051
+<pre>reg1 match <_sre.SRE_Match object; span=(0, 3), match='123'>
+reg1 search <_sre.SRE_Match object; span=(0, 3), match='123'>
+reg2 match None
+reg2 search <_sre.SRE_Match object; span=(3, 6), match='abc'>
+----------
+<_sre.SRE_Match object; span=(0, 3), match='123'>
+<_sre.SRE_Match object; span=(6, 9), match='123'>
+<_sre.SRE_Match object; span=(12, 15), match='123'>
+----------
+['123', '123', '123']
 </pre>
 </div>
 </div>
@@ -1216,95 +1193,453 @@ addopted from <a href="https://gist.github.com/tylerl/1239116">here</a></p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="the-discrete-logarithm-problem">the discrete logarithm problem<a class="anchor-link" href="#the-discrete-logarithm-problem">¶</a></h2><ul>
-<li><p>a^b mod (prime number) p = r
- when prime number the solution is equally likely to be any number between zero and prime number</p>
-<p>reverse is hard (to detect b having a, p, r )</p>
-<p>if we use a large prime number (e.g. hundreds of digits)</p>
-<pre><code> - all human computation power, thousends of years
+<h2 id="patterns">patterns<a class="anchor-link" href="#patterns">¶</a></h2>
+<pre><code>.   Match any char except newline
 
- [time needed to find it]</code></pre>
-</li>
-</ul>
-<pre><code>e.g.
-Cramer–Shoup
-DH
-DSA
-ECDH
-ECDSA
-EdDSA
-EKE
-ElGamal
-MQV
-Schnorr
-SPEKE
-SRP
-STS</code></pre>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="the-elliptic-curve-discrete-logarithm-problem">the elliptic-curve discrete logarithm problem<a class="anchor-link" href="#the-elliptic-curve-discrete-logarithm-problem">¶</a></h2>
-<pre><code>- ECC requires smaller key size  (256bits vs 3072bits for RSA)  (recommended : 384)
+^   Match start of the string (if can be start of new line re.M flag on search (not match) )
 
-- draw eleptic curve in python
+$   Match end of the string
 
-    max is like mirror (key size)
-    private key = "n" (number of times running the method)  ??
+\   escape special char , inside a pattern needed for " . ^ $ [ ] | ( )  \  and inside a [ ] needed for ^ - ] . You can also re.escape('test.')
 
-    starting point A
-    ending point Z
+[ ]  Enclose a set of matchable chars
 
+[^ ] negate a set of matchable chars
 
-    import numpy as np
-    import matplotlib.pyplot as plt
+[0-9A-Fa-f] a set ranges 
 
-    def main():
-        a = -1
-        b = 1
+R|S     Match either regex R or regex S.
 
-        y, x = np.ogrid[-5:5:100j, -5:5:100j]
-        plt.contour(x.ravel(), y.ravel(), pow(y, 2) - pow(x, 3) - x * a - b, [0])
-        plt.grid()
-        plt.show()
+()      Create capture group
 
-    if __name__ == '__main__':
-        main()
+(?P<name>...) capturing group with names
 
+(?:...)  non-capturing group
 
-</code></pre>
-<p>the elliptic-curve discrete logarithm problem  (ECC is here)</p>
-<pre><code>p Field that the Curve is defined over
-a,b = Values define the Curve
-G = the generator point
-n = prime order of G
-h = cofactor</code></pre>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Post-quantum-cryptography">Post-quantum cryptography<a class="anchor-link" href="#Post-quantum-cryptography">¶</a></h2><p>Post-quantum cryptography 
-<a href="https://en.wikipedia.org/wiki/Post-quantum_cryptography">https://en.wikipedia.org/wiki/Post-quantum_cryptography</a></p>
-<p>PQCrypto conference series since 2006
- Shor's algorithm</p>
+(?#...) comment
+
+(?!...) negative lookahead</code></pre>
+<p>Quantifiers</p>
+<pre><code>{m}     Exactly m repetitions
+
+{m,n}   From m (default 0) to n (default infinity)
+
+*       0 or more. Same as {,}
+
++       1 or more. Same as {1,}
+
+?       0 or 1. Same as {,1}</code></pre>
+<p>Special sequences</p>
+<p>make sure you use "\b" or r'\b'</p>
+<pre><code>\A  Start of string
+
+\b  Match empty string at word (\w+) boundary
+\B  Match empty string not at word boundary
+
+\d  Digit
+\D  Non-digit
+
+\s  Whitespace [ \t\n\r\f\v], see LOCALE,UNICODE
+\S  Non-whitespace
+
+\w  Alphanumeric: [0-9a-zA-Z_], see LOCALE
+\W  Non-alphanumeric
+
+\Z  End of string</code></pre>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [ ]:</div>
+<div class="prompt input_prompt">In [114]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Capturing groups</span>
+
+<span class="c1">## get by name</span>
+<span class="n">p1</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s1">'(23)(?P<name>abc)'</span><span class="p">)</span>
+<span class="n">m</span> <span class="o">=</span> <span class="n">p1</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">test</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'group:'</span><span class="p">,</span> <span class="n">m</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="s1">'name'</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">groupdict</span><span class="p">())</span> <span class="c1"># returns dictionary </span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">'-'</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>
+
+<span class="c1"># access to numbered groups</span>
+<span class="n">line</span> <span class="o">=</span> <span class="s2">"Cats are smarter than dogs"</span>
+<span class="n">matchObj</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span> <span class="sa">r</span><span class="s1">'(.*) are (.*?) .*'</span><span class="p">,</span> <span class="n">line</span><span class="p">,</span> <span class="n">re</span><span class="o">.</span><span class="n">M</span><span class="o">|</span><span class="n">re</span><span class="o">.</span><span class="n">I</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">matchObj</span><span class="p">:</span>
+    
+    <span class="c1"># the whole match not just capturing groups same as group(0)</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s2">"matchObj.group() : "</span><span class="p">,</span> <span class="n">matchObj</span><span class="o">.</span><span class="n">group</span><span class="p">())</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s2">"matchObj.group span: "</span><span class="p">,</span> <span class="n">matchObj</span><span class="o">.</span><span class="n">span</span><span class="p">())</span>
+    <span class="c1"># capturing group 1</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s2">"matchObj.group(1) : "</span><span class="p">,</span> <span class="n">matchObj</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+    <span class="c1"># capturing group 2</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s2">"matchObj.group(2) : "</span><span class="p">,</span> <span class="n">matchObj</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s2">"No match!!"</span><span class="p">)</span>
+
+<span class="c1"># in case of using .sub we can use \1 , \2 , ... to refrence captured groups or \g<name></span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">p1</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">'(\1)'</span><span class="p">,</span> <span class="n">test</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">p1</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s1">'XX\g<name>YY'</span><span class="p">,</span> <span class="n">test</span><span class="p">))</span>
+
+
+<span class="c1"># re.subn performs the same operation as sub(),</span>
+<span class="c1"># but return a tuple (new_string, number_of_subs_made).</span>
 </pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>group: abc
+{'name': 'abc'}
+----------
+matchObj.group() :  Cats are smarter than dogs
+matchObj.group span:  (0, 26)
+matchObj.group(1) :  Cats
+matchObj.group(2) :  smarter
+1(23)1(23)1(23)
+1XXabcYY1XXabcYY1XXabcYY
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [115]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Splitting by regex</span>
+
+<span class="n">mystring</span> <span class="o">=</span> <span class="s1">'1. First part 2. Second part 3. Third part'</span>
+<span class="n">re</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="sa">r</span><span class="s1">'\d\.'</span><span class="p">,</span> <span class="n">mystring</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt output_prompt">Out[115]:</div>
+<div class="output_text output_subarea output_execute_result">
+<pre>['', ' First part ', ' Second part ', ' Third part']</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Examples">Examples<a class="anchor-link" href="#Examples">¶</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [116]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># detect numbers</span>
+
+<span class="n">pattern</span> <span class="o">=</span> <span class="s1">'[1-9](?:\d{0,2})(?:,\d</span><span class="si">{3}</span><span class="s1">)*(?:\.\d*[1-9])?|0?\.\d*[1-9]|0'</span>
+<span class="n">tests</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'0'</span><span class="p">,</span> <span class="s1">'1'</span><span class="p">,</span> <span class="s1">'99'</span><span class="p">,</span> <span class="s1">'800'</span><span class="p">,</span> <span class="s1">'4,002'</span><span class="p">,</span> <span class="s1">'4002'</span><span class="p">,</span> <span class="s1">'2.2'</span><span class="p">,</span> <span class="s1">'0.0'</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">test</span> <span class="ow">in</span> <span class="n">tests</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span><span class="n">test</span><span class="p">)</span><span class="o">.</span><span class="n">string</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0
+1
+99
+800
+4,002
+4002
+2.2
+0.0
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [117]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># detect emails</span>
+
+<span class="n">pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">"([a-zA-Z0-9_.+-]+@[a-zA-Z0-9-.]+\.[a-zA-Z0-9-]+)"</span>
+<span class="n">tests</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'test@hotmail.com'</span><span class="p">,</span>
+         <span class="s1">'user@test.gc.ca'</span><span class="p">,</span>
+         <span class="s1">'I am at test@test.profile.'</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">test</span> <span class="ow">in</span> <span class="n">tests</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span><span class="n">test</span><span class="p">)</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>test@hotmail.com
+user@test.gc.ca
+test@test.profile
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [118]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># detect urls</span>
+
+<span class="n">pattern</span> <span class="o">=</span> <span class="s1">'(http|ftp|https):\/\/([\w\-_]+(?:(?:\.[\w\-_]+)+))([\w\-\.,@?^=%&:/~\+#]*[\w\-\@?^=%&/~\+#])?'</span>
+<span class="n">tests</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'http://test.com'</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">test</span> <span class="ow">in</span> <span class="n">tests</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span><span class="n">test</span><span class="p">)</span><span class="o">.</span><span class="n">group</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>http://test.com
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [119]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># validate usernames or password </span>
+<span class="c1"># min 3, max 16 allowed lowercase letters, numbers and _ and -</span>
+
+<span class="n">pattern</span> <span class="o">=</span> <span class="s1">'^[a-z0-9_-]{3,16}$'</span>
+<span class="n">validator</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">pattern</span><span class="p">)</span>
+
+<span class="n">good_example</span> <span class="o">=</span> <span class="s1">'my-us3r_n4m3'</span>
+<span class="n">bad_example</span> <span class="o">=</span> <span class="s1">'my-us3r.n4m3'</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">'good_example'</span><span class="p">,</span> <span class="n">validator</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">good_example</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'bad_example'</span><span class="p">,</span> <span class="n">validator</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">bad_example</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>good_example <_sre.SRE_Match object; span=(0, 12), match='my-us3r_n4m3'>
+bad_example None
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [120]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># validate hex value</span>
+
+<span class="n">pattern</span> <span class="o">=</span> <span class="s1">'^#?([a-f0-9]</span><span class="si">{6}</span><span class="s1">|[a-f0-9]</span><span class="si">{3}</span><span class="s1">)$'</span>
+<span class="n">validator</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">pattern</span><span class="p">)</span>
+
+<span class="n">good_example</span> <span class="o">=</span> <span class="s1">'#a3c113'</span>
+<span class="n">bad_example</span> <span class="o">=</span> <span class="s1">'#4d82h4'</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">'good_example'</span><span class="p">,</span> <span class="n">validator</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">good_example</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'bad_example'</span><span class="p">,</span> <span class="n">validator</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">bad_example</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>good_example <_sre.SRE_Match object; span=(0, 7), match='#a3c113'>
+bad_example None
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [121]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># validate ip</span>
+
+<span class="n">pattern</span> <span class="o">=</span> <span class="s1">'^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.)</span><span class="si">{3}</span><span class="s1">(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$'</span>
+<span class="n">validator</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">pattern</span><span class="p">)</span>
+
+<span class="n">good_example</span> <span class="o">=</span> <span class="s1">'73.60.124.136'</span>
+<span class="n">bad_example</span> <span class="o">=</span> <span class="s1">'256.60.124.136'</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">'good_example'</span><span class="p">,</span> <span class="n">validator</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">good_example</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'bad_example'</span><span class="p">,</span> <span class="n">validator</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">bad_example</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>good_example <_sre.SRE_Match object; span=(0, 13), match='73.60.124.136'>
+bad_example None
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [122]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># remove all tags</span>
+
+<span class="n">test</span> <span class="o">=</span> <span class="s1">'<test name="Century Schoolbook" size="22">Title</test>'</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s1">'<[^>]*>'</span><span class="p">,</span> <span class="s1">''</span><span class="p">,</span> <span class="n">test</span><span class="p">))</span>
+
+<span class="c1"># detect urls </span>
+<span class="n">test2</span> <span class="o">=</span> <span class="s2">"""</span>
+<span class="s2">    <div id="foodmenu"></span>
+<span class="s2">        <a href="hotdog.link">Hot Dog</a></span>
+<span class="s2">    </div></span>
+<span class="s2">    <div id="foodmenu"></span>
+<span class="s2">        <a href="randomlink">Burger</a></span>
+<span class="s2">    </div></span>
+<span class="s2">    <div id="foodmenu"></span>
+<span class="s2">        <a href="randomlink">Chips</a></span>
+<span class="s2">    </div></span>
+<span class="s2">    <div id="foodmenu"></span>
+<span class="s2">        <a href="randomlink">Coke</a></span>
+<span class="s2">    </div>"""</span>
+<span class="n">pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">'<a[^>]*href=\"([^>]*)\"[^>]*>(.*?)</a>'</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">test2</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Title
+[('hotdog.link', 'Hot Dog'), ('randomlink', 'Burger'), ('randomlink', 'Chips'), ('randomlink', 'Coke')]
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [123]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># find words with prefix </span>
+
+<span class="n">text</span> <span class="o">=</span> <span class="s1">'Literally, I’m really hungry now. Actually, I didn’t have a lot for breakfast.'</span>
+
+<span class="n">adverbs</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="sa">r</span><span class="s1">'\b\w*ly\b'</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">adverbs</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>['Literally', 'really', 'Actually']
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [124]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># validate US phone numbers</span>
+
+<span class="n">pattern</span> <span class="o">=</span> <span class="s1">'\(?([2-9][0-8][0-9])\)?[-.● ]?([2-9][0-9]</span><span class="si">{2}</span><span class="s1">)[-.●]?([0-9]</span><span class="si">{4}</span><span class="s1">)'</span>
+<span class="n">validator</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">pattern</span><span class="p">)</span>
+
+<span class="n">good_example1</span> <span class="o">=</span> <span class="s1">'(541) 754-3010'</span>
+<span class="n">good_example2</span> <span class="o">=</span> <span class="s1">'541-754-3010'</span>
+<span class="n">good_example3</span> <span class="o">=</span> <span class="s1">'5417543010'</span>
+
+<span class="n">bad_example</span> <span class="o">=</span> <span class="s1">'134-911-5678 '</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">'good_example'</span><span class="p">,</span> <span class="n">validator</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">good_example1</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'good_example'</span><span class="p">,</span> <span class="n">validator</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">good_example2</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'good_example'</span><span class="p">,</span> <span class="n">validator</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">good_example3</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'bad_example'</span><span class="p">,</span> <span class="n">validator</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">bad_example</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>good_example <_sre.SRE_Match object; span=(0, 14), match='(541) 754-3010'>
+good_example <_sre.SRE_Match object; span=(0, 12), match='541-754-3010'>
+good_example <_sre.SRE_Match object; span=(0, 10), match='5417543010'>
+bad_example None
+</pre>
+</div>
 </div>
 </div>
 </div>
@@ -1345,8 +1680,8 @@ h = cofactor</code></pre>
   <div id="disqus_thread"></div>
   <script>
     var disqus_config = function() {
-      this.page.url = 'https://ramtinms.github.io/random-walk/public_key_encryption_math_problems.html';
-      this.page.identifier = 'public_key_encryption_math_problems';
+      this.page.url = 'https://ramtinms.github.io/random-walk/python3_regular_expressions.html';
+      this.page.identifier = 'python3_regular_expressions';
     };
     (function() {
       var d = document;
